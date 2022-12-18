@@ -1,3 +1,4 @@
+//map routes to controller
 "use strict";
 
 const { controller } = require("./controller");

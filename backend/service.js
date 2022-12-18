@@ -1,4 +1,4 @@
-//preform logic -> send to db
+//preform logic -> send to db 
 const fs = module.require("fs");
 
 const { db } = require("./db");

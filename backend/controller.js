@@ -6,8 +6,8 @@ const controller = {
   putWeather: async (req, res) => {
     try {
       let body = req.body;
-      
-      //validate...?
+
+      //validate...
 
       if (body) {
         await service.putWeather(body);
@@ -22,12 +22,14 @@ const controller = {
 
   getWeather: async (req, res) => {
     try {
-      let {lat,lon} = req.params;
+      const origin = req.headers;
+      console.log(origin);
+      let { lat, lon } = req.params;
       //validate...?
-      let weather = await service.getWeather({lat,lon});
+      let weather = await service.getWeather({ lat, lon });
       res.status(200).json({
-        success:true,
-        data:weather
+        success: true,
+        data: weather
       });
     } catch (err) {
       console.log("controller getWeather...", err.message);
