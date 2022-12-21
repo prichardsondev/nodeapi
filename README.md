@@ -10,21 +10,45 @@
 
 ### backend folder:
 
-#### To run:
+#### To run: - could write script to setup and run back and front
 
-- cd NODEAPI/back
+### change to backend directory
 
-- npm install
+```shell
+cd NODEAPI/backend
+```
 
-- Get free API Key from https://openweathermap.org/
+### install packages
 
-- modify .env.example to be just .env - add api key
+```shell
+npm install
+```
 
-- npm start
+### Get free API Key from https://openweathermap.org/
 
-To run in developer mode which restarts server on file save:<br/>
+### modify .env.example to be just .env
 
-- npm start dev (instead of npm start)
+```shell
+sudo mv .env.example .env
+```
+
+### add api key
+
+```shell
+sudo nano .env
+```
+
+### start backend
+
+```shell
+npm start
+```
+
+### optional: start in developer mode which restarts server on file save
+
+```shell
+npm start dev
+```
 
 #### Structure app.js->route.js->controller.js->service.js->db.js <br/>
 
@@ -58,11 +82,27 @@ body<br/>
 
 ---
 
-### frontend folder: WIP - Make call to backend using hardcoded coords. Open browser console
+### frontend folder: React
 
+#### react pros please fix my hook logic if necessary
+
+<br/>
 #### To run:
 
-- start backend first
-- cd frontend
-- npm i
-- npm start
+### change to frontend directory
+
+```shell
+cd frontend
+```
+
+### install packages
+
+```shell
+npm install
+```
+
+### run frontend
+
+```shell
+npm start
+```

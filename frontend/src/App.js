@@ -1,9 +1,12 @@
-import FetchData from './components/FetchData';
+import Weather from './components/Weather';
+import './index.css';
+
 
 function App() {
+
   return (
     <main>
-      <FetchData />
+      <Weather />
     </main>
   );
 }
