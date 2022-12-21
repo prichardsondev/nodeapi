@@ -15,7 +15,7 @@
 ### change to backend directory
 
 ```shell
-cd NODEAPI/backend
+cd nodeapi/backend
 ```
 
 ### install packages
@@ -87,12 +87,13 @@ body<br/>
 #### react pros please fix my hook logic if necessary
 
 <br/>
+
 #### To run:
 
 ### change to frontend directory
 
 ```shell
-cd frontend
+cd nodeapi/frontend
 ```
 
 ### install packages
