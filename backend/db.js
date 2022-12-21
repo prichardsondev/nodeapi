@@ -11,9 +11,9 @@ const fs = require("fs");
 
 const db = {
 
-    get: async ({ lat, lon }) => {
+    get: async ({ lat, lon, units }) => {
         try {
-            const path = `${openWeatherMapRoute}lat=${lat}&lon=${lon}&appid=${key}`;
+            const path = `${openWeatherMapRoute}lat=${lat}&lon=${lon}&units=${units}&appid=${key}`;
             const res = await fetch(path);
             const json = await res.json();
             return json;

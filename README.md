@@ -106,3 +106,11 @@ npm install
 ```shell
 npm start
 ```
+
+### TODO
+
+- break out Weather.js into multiple components
+  - GetCoords
+  - ChooseUnits
+  - DisplayWeather
+  - PostToDB

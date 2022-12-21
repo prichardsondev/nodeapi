@@ -24,9 +24,9 @@ const controller = {
     try {
       const origin = req.headers;
       console.log(origin);
-      let { lat, lon } = req.params;
+      let { lat, lon, units } = req.params;
       //validate...?
-      let weather = await service.getWeather({ lat, lon });
+      let weather = await service.getWeather({ lat, lon, units });
       res.status(200).json({
         success: true,
         data: weather

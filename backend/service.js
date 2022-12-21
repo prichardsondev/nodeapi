@@ -10,8 +10,8 @@ const service = {
             db.post(body);
         } catch (err) { }
     },
-    getWeather: async ({lat, lon}) => {
-        let weather = await db.get({lat,lon});
+    getWeather: async ({ lat, lon, units }) => {
+        let weather = await db.get({ lat, lon, units });
         return weather;
     },
 };
