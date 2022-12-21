@@ -8,10 +8,11 @@ const GetCoords = () => {
     const [lat, setLat] = useState('');
     const [lon, setLon] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         url = `${url}${lat}/${lon}`;
-        triggerFetch(url);
+        await triggerFetch(url);
+        console.log(data);
     }
 
     return (
@@ -34,7 +35,7 @@ const GetCoords = () => {
                 </form>
             </article>
 
-            <h2>Weather: {data.data?.weather[0].main}</h2>
+            <h2>Weather: {data.data?.weather[0].description}</h2>
             <h2>Temp: {data.data?.main.temp} K</h2>
         </>
     )
